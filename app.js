@@ -16,6 +16,13 @@
 //     //Do something
 // }
 
+const user1 = {teach: ['guitar', 'accordian', 'dance', 'poetry', 'JavaScript'],
+	learn: ['painting', 'fiddle', 'bass', 'saxophone', 'fishing']}
+
+const user2 = {teach: ['cooking', 'time management', 'painting'],
+	learn: ['piano', 'running', 'JavaScript', 'guitar']}
+
+
 function intersect_arrays(a, b) {
     var sorted_a = a.concat().sort();
     var sorted_b = b.concat().sort();
@@ -41,14 +48,9 @@ function intersect_arrays(a, b) {
     console.log(common.join(", "))
 }
 
-const user1teach = ['guitar', 'accordian', 'dance', 'poetry', 'JavaScript']; //modified for additional match
-const user1learn = ['painting', 'fiddle', 'bass', 'saxophone', 'fishing'];
-const user2teach = ['cooking', 'time management', 'painting'];
-const user2learn = ['piano', 'running', 'JavaScript', 'guitar'];
-//var match1 = 
-intersect_arrays(user1teach, user2learn) 
-//var match2 = 
-intersect_arrays(user2teach, user1learn)
+intersect_arrays(user1.teach, user2.learn) 
+intersect_arrays(user2.teach, user1.learn)
+
 
  // if (match1 != null && match2 != null) {
  // 	console.log("we have a match!")
