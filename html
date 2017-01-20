@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <style>
+  body {
+    text-align: center;
+  }
+  @media screen and (min-width: 48em) {
+    body {
+        text-align: left;
+    }
+  }
+  .container {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  </style>
+</head>
+<body>
+  <div class='container'>
+
+   
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary">
+    <input type="checkbox" id="user1" autocomplete="off"> User 1
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" id="user2" autocomplete="off"> User 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" id="user4" autocomplete="off"> User 3
+  </label>
+   <label class="btn btn-primary">
+    <input type="checkbox" id="user4" autocomplete="off"> User 4
+  </label>
+</div>
+
+
+
+    <div class='row'>
+      <div class='col-md-12'>
+        <button id='user1'>user1</button>
+      </div>
+    </div>
+
+     <div class='row'>
+      <div class='col-md-12'>
+        <button id='user2'>User2</button>
+      </div>
+    </div>
+
+     <div class='row'>
+      <div class='col-md-12'>
+        <button id='user3'>User 3</button>
+      </div>
+    </div>
+
+     <div class='row'>
+      <div class='col-md-12'>
+        <button id='user4'>User 4</button>
+      </div>
+    </div>
+
+
+  </div>
+  <script>
+
+   (function() {
+
+    $('#matchUsers').on('click', showCommon)
+    //getGhosts()
+
+    function handleClear(event) {
+      $('#matchUsers').show('oneteachtwo twoteachone')
+
+      //$('#secret').css('background-color', '');
+      //$('#secret').val('');
+    }
+
+    // function getGhosts() {
+    //   var ghostsAPI = 'https://private-f3b4b-interview2.apiary-mock.com/data';
+    //   $.getJSON( ghostsAPI ).done(function( data ) {
+    //     $('#ghosts').append($.map(data, createRow));
+    //   });
+    // }
+
+    
+      
+
+    //   function handleClick(event) {
+    //     $('#secret').val(ghost.secret)
+    //     $('#secret').css('background-color', ghost.secret)
+    //   }
+
+    
+
+    // function formatDate(timestamp) {
+    //   var date = new Date(+timestamp);
+    //   return (date.getMonth()+1) + '/' + date.getDate() +'/' + date.getFullYear();
+    // }
+
+  })();
+
+  </script>
+</body>
+</html>
